@@ -1,3 +1,4 @@
+apt install python3-dev libboost-all-dev
 开源语音识别DeepSpeech v0.4.1（版本号下面的一样，要根据git实际下载进行调整）训练中文数据源thchs30
 
 相关脚本：
