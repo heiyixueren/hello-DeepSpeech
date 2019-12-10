@@ -34,7 +34,7 @@ thchs30-test.csv
 thchs30-train.csv
 
 三 生成trie
-lmplz -o 5  --discount_fallback  --text thchs30-vocabulary.txt --arpa  thchs30-words.arpa
+lmplz -o 5 -S 10% --discount_fallback  --text thchs30-vocabulary.txt --arpa  thchs30-words.arpa
 build_binary trie -q 8 -b 8  -a 64 thchs30-words.arpa thchs30-lm.binary
 ../native_client/generate_trie thchs30-alphabet.txt thchs30-lm.binary thchs30-trie
 
