@@ -12,6 +12,8 @@ git clone https://github.com/mozilla/DeepSpeech.git
 
 pip install -r requirements.txt
 pip install deepspeech
+
+# 进入git下载到的DeepSpeech根目录下
 pip install $(python util/taskcluster.py --decoder)
 
 python util/taskcluster.py --branch v0.4.1 --target native_client/
